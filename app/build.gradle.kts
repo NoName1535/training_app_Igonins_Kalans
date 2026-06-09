@@ -37,6 +37,7 @@ android {
 dependencies {
 
     implementation(libs.appcompat)
+    implementation(libs.cardview)
     implementation(libs.material)
     implementation(libs.constraintlayout)
     implementation(libs.lifecycle.livedata.ktx)
