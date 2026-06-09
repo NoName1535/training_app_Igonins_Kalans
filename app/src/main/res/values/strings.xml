@@ -10,4 +10,14 @@
     <string name="username">username</string>
     <string name="repeated_password">repeated password</string>
     <string name="email">email</string>
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="rank_1">1</string>
+    <string name="rank_2">2</string>
+    <string name="rank_3">3</string>
+    <string name="user_1">User One</string>
+    <string name="user_2">User Two</string>
+    <string name="user_3">User Three</string>
+    <string name="score_1">2500 pts</string>
+    <string name="score_2">2100 pts</string>
+    <string name="score_3">1800 pts</string>
 </resources>
