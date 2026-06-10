@@ -1,19 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_home"
+        android:fontFamily="@font/cabin"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title=""
+        android:fontFamily="@font/cabin"
+        android:icon="@drawable/ic_trophy" />
 
     <item
+        android:id="@+id/add"
+        android:title=""
+        android:fontFamily="@font/cabin"
+        android:icon="@drawable/ic_plus" />
+    <item
+        android:id="@+id/calculator"
+        android:title=""
+        android:fontFamily="@font/cabin"
+        android:icon="@drawable/ic_calculator" />
+    <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_notifications" />
+        android:icon="@drawable/ic_profile"
+        android:fontFamily="@font/cabin"
+        android:title="@string/profile" />
 
 </menu>

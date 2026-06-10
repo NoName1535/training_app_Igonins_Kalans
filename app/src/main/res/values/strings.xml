@@ -35,4 +35,5 @@
     <string name="back">BACK</string>
     <string name="unit_grams">g</string>
     <string name="food_types_icons">🐟 🥬 🍗 </string>
+    <string name="profile">profile</string>
 </resources>
