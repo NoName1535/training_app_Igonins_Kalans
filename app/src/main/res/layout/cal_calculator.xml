@@ -244,9 +244,9 @@
                     android:id="@+id/tvMealTotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin"
                     android:gravity="center"
                     android:text="@string/meal_total"
-                    android:fontFamily="@font/cabin"
                     android:textColor="#000000"
                     android:textSize="22sp"
                     android:textStyle="bold" />
@@ -255,8 +255,8 @@
                     android:id="@+id/tvMacros"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
                     android:fontFamily="@font/cabin"
+                    android:gravity="center"
                     android:text="@string/macros"
                     android:textColor="#000000"
                     android:textSize="18sp" />
