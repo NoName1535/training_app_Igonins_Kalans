@@ -8,7 +8,7 @@
     android:theme="@style/Theme.MyApplication">
 
     <TextView
-        android:id="@+id/leaderboardTitle"
+        android:id="@+id/calculatorTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -34,7 +34,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leaderboardTitle">
+        app:layout_constraintTop_toBottomOf="@+id/calculatorTitle">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-                <!-- Item 1 -->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -81,7 +81,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <!-- Item 2 -->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
@@ -113,7 +113,7 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <!-- Item 3 -->
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
