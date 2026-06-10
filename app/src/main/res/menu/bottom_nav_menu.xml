@@ -6,29 +6,29 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:fontFamily="@font/cabin"
+        android:fontFamily="@font/goldman"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:title=""
-        android:fontFamily="@font/cabin"
+        android:fontFamily="@font/goldman"
         android:icon="@drawable/ic_trophy" />
 
     <item
         android:id="@+id/add"
         android:title=""
-        android:fontFamily="@font/cabin"
+        android:fontFamily="@font/goldman"
         android:icon="@drawable/ic_plus" />
     <item
         android:id="@+id/calculator"
         android:title=""
-        android:fontFamily="@font/cabin"
+        android:fontFamily="@font/goldman"
         android:icon="@drawable/ic_calculator" />
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_profile"
-        android:fontFamily="@font/cabin"
+        android:fontFamily="@font/goldman"
         android:title="@string/profile" />
 
 </menu>
