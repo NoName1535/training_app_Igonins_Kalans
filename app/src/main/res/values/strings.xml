@@ -41,4 +41,5 @@
     <string name="unit_grams">g</string>
     <string name="food_types_icons">🐟 🥬 🍗 </string>
     <string name="profile">profile</string>
+    <string name="for_you">For you</string>
 </resources>
