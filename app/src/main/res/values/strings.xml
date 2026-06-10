@@ -20,4 +20,19 @@
     <string name="score_1">2500 pts</string>
     <string name="score_2">2100 pts</string>
     <string name="score_3">1800 pts</string>
+    <string name="calory_calculator">Calorie Calculator</string>
+    <string name="current_date_time">Current Date &amp; Time (Edit)</string>
+    <string name="default_date_time">07/06/26/05:00</string>
+    <string name="log_meal_food">Log Meal/Food</string>
+    <string name="label_food_item">Food Item: </string>
+    <string name="label_weight">Weight (Grams): </string>
+    <string name="label_food_types">Food Types: </string>
+    <string name="label_notes">Notes (Optional): </string>
+    <string name="add_food">ADD FOOD</string>
+    <string name="meal_summary">Meal Summary:</string>
+    <string name="meal_total">MEAL TOTAL:</string>
+    <string name="macros">(P: ..g, C: ..g, F: ..g)</string>
+    <string name="back">BACK</string>
+    <string name="unit_grams">g</string>
+    <string name="food_types_icons">🐟 🥬 🍗 </string>
 </resources>
