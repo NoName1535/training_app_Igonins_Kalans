@@ -6,7 +6,7 @@
     android:background="#2B2B2B"
     android:theme="@style/Theme.MyApplication">
 
-    <!-- Title -->
+
     <TextView
         android:id="@+id/leaderboardTitle"
         android:layout_width="wrap_content"
@@ -20,7 +20,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Main Table Container -->
     <androidx.cardview.widget.CardView
         android:id="@+id/LeaderboardContainer"
         android:layout_width="362dp"
@@ -42,7 +41,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Table Header -->
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +87,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <!-- Item 1 -->
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
@@ -130,7 +127,6 @@
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!-- Item 2 -->
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
@@ -171,7 +167,6 @@
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!-- Item 3 -->
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
@@ -212,7 +207,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!-- Item 4 -->
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
@@ -253,7 +248,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!-- Item 5 -->
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
