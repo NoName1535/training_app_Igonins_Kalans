@@ -22,4 +22,16 @@
         android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/leaderboard"
+        android:name="com.example.myapplication.ui.leaderboard.LeaderboardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/leaderboard" />
+
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.example.myapplication.ui.calculator.CalculatorFragment"
+        android:label="Calculator"
+        tools:layout="@layout/cal_calculator" />
 </navigation>
