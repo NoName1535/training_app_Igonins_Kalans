@@ -19,9 +19,7 @@ public class CalculatorFragment extends Fragment {
         binding = CalCalculatorBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        binding.btnBack.setOnClickListener(v -> 
-            NavHostFragment.findNavController(this).navigate(R.id.navigation_home)
-        );
+
 
         return root;
     }

@@ -21,13 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="413dp"
+        android:layout_height="595dp"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:padding="16dp"
         android:clipToPadding="false"
-        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculatorTitle">
@@ -51,19 +49,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin"
                     android:text="@string/current_date_time"
                     android:textColor="#000000"
-                    android:fontFamily="@font/cabin"
                     android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tvDateTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin"
                     android:text="@string/default_date_time"
                     android:textColor="#000000"
                     android:textSize="20sp"
-                    android:fontFamily="@font/cabin"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -145,8 +143,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
-                        android:text="@string/unit_grams"
                         android:fontFamily="@font/cabin"
+                        android:text="@string/unit_grams"
                         android:textColor="#000000" />
                 </LinearLayout>
 
@@ -225,9 +223,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin"
                     android:text="@string/meal_summary"
                     android:textColor="#000000"
-                    android:fontFamily="@font/cabin"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -261,21 +259,8 @@
                     android:textColor="#000000"
                     android:textSize="18sp" />
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="175dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/roundstyle"
-        android:fontFamily="@font/cabin"
-        android:text="@string/back"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
