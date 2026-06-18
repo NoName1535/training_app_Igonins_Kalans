@@ -39,7 +39,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/registrationwindow"
             android:layout_width="match_parent"
-            android:layout_height="412dp"
+            android:layout_height="401dp"
             android:background="#FFACBC">
 
             <TextView
@@ -55,12 +55,13 @@
 
             <EditText
                 android:id="@+id/editUsername"
-                android:layout_width="260dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="#D9D9D9"
+                android:background="@drawable/whiteround"
                 android:ems="10"
                 android:inputType="text"
+                android:padding="8dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -81,12 +82,13 @@
 
             <EditText
                 android:id="@+id/editPassword"
-                android:layout_width="260dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="#D9D9D9"
+                android:background="@drawable/whiteround"
                 android:ems="10"
                 android:inputType="textPassword"
+                android:padding="8dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -107,12 +109,13 @@
 
             <EditText
                 android:id="@+id/editRepeatPassword"
-                android:layout_width="260dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="#D9D9D9"
+                android:background="@drawable/whiteround"
                 android:ems="10"
                 android:inputType="textPassword"
+                android:padding="8dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -133,12 +136,13 @@
 
             <EditText
                 android:id="@+id/editEmail"
-                android:layout_width="260dp"
-                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:background="#D9D9D9"
+                android:background="@drawable/whiteround"
                 android:ems="10"
                 android:inputType="textEmailAddress"
+                android:padding="8dp"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
