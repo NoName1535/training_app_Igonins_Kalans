@@ -10,23 +10,25 @@
         android:id="@+id/calculatorTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:fontFamily="@font/cabin"
         android:text="@string/calory_calculator"
-        android:textColor="#000000"
-        android:textSize="36sp"
+        android:textSize="32sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="413dp"
-        android:layout_height="595dp"
-        android:layout_marginTop="16dp"
-        android:clipToPadding="false"
-        android:padding="16dp"
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="wrap"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculatorTitle">
 
@@ -37,14 +39,161 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="12dp"
                 android:background="@drawable/bg_light_gray_section"
                 android:orientation="vertical"
                 android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_light_gray_section"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin"
+                        android:text="@string/log_meal_food"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cabin"
+                            android:text="@string/label_food_item"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etFoodItem"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_white_input"
+                            android:fontFamily="@font/cabin"
+                            android:hint="Enter food name"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cabin"
+                            android:text="@string/label_weight"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etWeight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_white_input"
+                            android:fontFamily="@font/cabin"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/cabin"
+                            android:text="@string/unit_grams"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cabin"
+                            android:text="@string/label_food_types"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🐟 🥬 🍗"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/cabin"
+                            android:text="@string/label_notes"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/etNotes"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_white_input"
+                            android:fontFamily="@font/cabin"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnAddFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/roundstyle"
+                        android:fontFamily="@font/cabin"
+                        android:text="@string/add_food"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -52,7 +201,7 @@
                     android:fontFamily="@font/cabin"
                     android:text="@string/current_date_time"
                     android:textColor="#000000"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/tvDateTime"
@@ -61,161 +210,14 @@
                     android:fontFamily="@font/cabin"
                     android:text="@string/default_date_time"
                     android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="274dp"
-                android:layout_marginBottom="12dp"
-                android:background="@drawable/bg_light_gray_section"
-                android:orientation="vertical"
-                android:padding="12dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cabin"
-                    android:text="@string/log_meal_food"
-                    android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/cabin"
-                        android:text="@string/label_food_item"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/etFoodItem"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/bg_white_input"
-                        android:fontFamily="@font/cabin"
-                        android:hint="Enter food name"
-                        android:importantForAutofill="no"
-                        android:inputType="text"
-                        android:padding="8dp"
-                        android:textColor="#000000" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/cabin"
-                        android:text="@string/label_weight"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/etWeight"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/bg_white_input"
-                        android:fontFamily="@font/cabin"
-                        android:importantForAutofill="no"
-                        android:inputType="number"
-                        android:padding="8dp"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="4dp"
-                        android:fontFamily="@font/cabin"
-                        android:text="@string/unit_grams"
-                        android:textColor="#000000" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/cabin"
-                        android:text="@string/label_food_types"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="🐟 🥬 🍗"
-                        android:textSize="24sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/cabin"
-                        android:text="@string/label_notes"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/etNotes"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/bg_white_input"
-                        android:fontFamily="@font/cabin"
-                        android:importantForAutofill="no"
-                        android:inputType="text"
-                        android:padding="8dp"
-                        android:textColor="#000000" />
-                </LinearLayout>
-
-                <Button
-                    android:id="@+id/btnAddFood"
-                    android:layout_width="wrap_content"
-                    android:layout_height="22dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/roundstyle"
-                    android:fontFamily="@font/cabin"
-                    android:text="@string/add_food"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/bg_light_gray_section"
                 android:orientation="vertical"
                 android:padding="12dp">
@@ -228,7 +230,6 @@
                     android:textColor="#000000"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -246,7 +247,7 @@
                     android:gravity="center"
                     android:text="@string/meal_total"
                     android:textColor="#000000"
-                    android:textSize="22sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -257,7 +258,7 @@
                     android:gravity="center"
                     android:text="@string/macros"
                     android:textColor="#000000"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
