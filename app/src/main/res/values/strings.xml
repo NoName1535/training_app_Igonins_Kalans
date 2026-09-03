@@ -43,4 +43,8 @@
     <string name="profile">profile</string>
     <string name="for_you">For you</string>
     <string name="video">video</string>
+    <string name="enter_food_name">Enter food name</string>
+    <string name="emoji">🐟 🥬 🍗</string>
+    <string name="enter_weight">Enter weight</string>
+    <string name="enter_notes">Enter notes</string>
 </resources>

@@ -86,12 +86,13 @@
                             android:layout_weight="1"
                             android:background="@drawable/bg_white_input"
                             android:fontFamily="@font/cabin"
-                            android:hint="Enter food name"
+                            android:hint="@string/enter_food_name"
                             android:importantForAutofill="no"
                             android:inputType="text"
                             android:padding="8dp"
                             android:textColor="#000000"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -119,8 +120,10 @@
                             android:importantForAutofill="no"
                             android:inputType="number"
                             android:padding="8dp"
+                            android:hint="@string/enter_weight"
                             android:textColor="#000000"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            tools:ignore="TouchTargetSizeCheck" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -149,7 +152,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="🐟 🥬 🍗"
+                            android:text="@string/emoji"
                             android:textSize="20sp" />
                     </LinearLayout>
 
@@ -177,9 +180,11 @@
                             android:fontFamily="@font/cabin"
                             android:importantForAutofill="no"
                             android:inputType="text"
+                            android:hint="@string/enter_notes"
                             android:padding="8dp"
                             android:textColor="#000000"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
                     <Button
