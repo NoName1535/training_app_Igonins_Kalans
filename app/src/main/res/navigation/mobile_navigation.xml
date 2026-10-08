@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/leaderboard"
+        android:name="com.example.myapplication.ui.leaderboard.LeaderboardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/leaderboard" />
+
+    <fragment
+        android:id="@+id/calculator"
+        android:name="com.example.myapplication.ui.calculator.CalculatorFragment"
+        android:label="Calculator"
+        tools:layout="@layout/cal_calculator" />
+
+    <fragment
+        android:id="@+id/profilenav"
+        android:name="com.example.myapplication.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/profile" />
+
+    <fragment
+        android:id="@+id/workoutCreate"
+        android:name="com.example.myapplication.ui.workout.WorkoutCreateFragment"
+        android:label="@string/create_workout"
+        tools:layout="@layout/workout_create" />
+</navigation>
