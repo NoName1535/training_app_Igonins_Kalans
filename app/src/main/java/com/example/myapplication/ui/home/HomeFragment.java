@@ -88,12 +88,10 @@ public class HomeFragment extends Fragment {
     private void showCurrentWorkout() {
         if (workoutList == null || workoutList.isEmpty()) {
             binding.tvWorkoutVideoTitle.setText("No Workouts Yet");
-            binding.tvWorkoutVideoDetails.setText("Create a workout using the + button");
             binding.webViewVideo.loadData("<html><body style='background:black;color:white;text-align:center;padding-top:40px;'>No Video</body></html>", "text/html", "UTF-8");
         } else {
             WorkoutEntity w = workoutList.get(currentIndex);
             binding.tvWorkoutVideoTitle.setText(w.title);
-            binding.tvWorkoutVideoDetails.setText("Time: " + w.time + " | Exercises: " + w.exercises + " | ❤️ " + w.likesCount);
             if (w.videoUrl != null && !w.videoUrl.isEmpty()) {
                 String url = w.videoUrl;
                 if (!url.startsWith("http://") && !url.startsWith("https://")) {

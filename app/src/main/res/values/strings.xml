@@ -56,7 +56,7 @@
     <string name="enter_workout_time">Enter workout time (e.g., 45 min)</string>
     <string name="exercise_types">Exercise Types</string>
     <string name="enter_exercise_types">Enter exercise types (e.g., Cardio, Strength)</string>
-    <string name="video_link">Video (Link / File)</string>
-    <string name="enter_video_link">Enter video URL or select file</string>
+    <string name="video_link">Video (Link)</string>
+    <string name="enter_video_link">Enter video URL</string>
     <string name="save_workout">SAVE WORKOUT</string>
 </resources>
